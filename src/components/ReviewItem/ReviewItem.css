@@ -1,0 +1,42 @@
+.reviewItem-Parent-div{
+    display: flex;
+    border: 2px solid rgb(156, 150, 150);
+    border-radius: 10px;
+    width: 571px;
+    margin: 21px auto;
+    padding: 8px;
+}
+
+.review-details-container{
+    width: 100%;
+    display: flex;
+    margin-left: 17px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviewItem-image{
+    width: 91px;
+}
+
+.review-details p{
+    margin: 0;
+}
+
+/* css for font awesome icon and button */
+.deleteIcon{
+    font-size: 31px;
+    color: #EB5757;
+}
+.delete-button{
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #F9CDCD;
+}
+
+.delete-button:hover{
+    background-color: #8385e3;
+    cursor: pointer;
+}
