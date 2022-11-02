@@ -2,8 +2,8 @@ import { getStoredCart } from "../utilities/LocalStorage";
 
 export const productsAndCartLoader = async () => {
     //get products data
-    const productsData = await fetch('products.json');
-    const products = await productsData.json(); //products hocche array of objects
+    const productsData = await fetch('http://localhost:5000/products');
+    const {products} = await productsData.json(); //products hocche array of objects
 
     //get cart from local storage..
     const savedCart = getStoredCart();
@@ -15,7 +15,7 @@ export const productsAndCartLoader = async () => {
 
     for(const id in savedCart){
         // console.log(id);
-        const addedProduct = products.find(product => product.id === id);
+        const addedProduct = products.find(product => product._id === id);
         console.log(id, addedProduct);
         //find return kore object and filter return kore array
         

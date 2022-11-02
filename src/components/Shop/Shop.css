@@ -33,6 +33,28 @@
     font-size: 20px;
 }
 
+.pagination{
+    /* margin-top: 20px;
+    margin-bottom: 50px; */
+    margin: 30px 150px 50px 150px;
+}
+
+.pagination .selected {
+    background-color: rgb(238, 182, 39);
+    border: gold;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    width: 30px;
+}
+
+.option-select{
+    width: 45px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+
 
 @media screen and  (max-width:1100px) {
     .products-container{

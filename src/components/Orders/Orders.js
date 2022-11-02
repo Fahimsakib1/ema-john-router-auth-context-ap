@@ -18,7 +18,7 @@ const Orders = () => {
     //remove the product after clicking on delete button on ReviewItem.js file
     const handleRemoveItem = (id) => {
         console.log(id);
-        const remainingItems = cart.filter(item => item.id !== id);
+        const remainingItems = cart.filter(item => item._id !== id);
         console.log(remainingItems);
         setCart(remainingItems); 
         Swal.fire("Done!","This Item is Removed Form The Cart" , "success");  
@@ -35,7 +35,7 @@ const Orders = () => {
         <div className='shop-container'>
             <div className='orders-container'>
                 {
-                    cart.map(product => <ReviewItem product ={product} key ={product.id} handleRemoveItem={handleRemoveItem}></ReviewItem>)
+                    cart.map(product => <ReviewItem product ={product} key ={product._id} handleRemoveItem={handleRemoveItem}></ReviewItem>)
                 }
                 {
                     cart.length === 0 && <NoItemsToDisplay></NoItemsToDisplay>

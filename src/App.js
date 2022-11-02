@@ -21,9 +21,9 @@ function App() {
       children: [
         {
           path: '/',
-          loader: async () => {
-            return fetch('products.json')
-          },
+          // loader: async () => {
+          //   return fetch('http://localhost:5000/products')
+          // },
           element: <Shop></Shop>
         },
         {
